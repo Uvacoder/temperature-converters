@@ -14,7 +14,9 @@ const Converter: React.FC = () => {
         setFahrenheit(value);
     }
 
-    function convertCelsiusToFahr(e: React.ChangeEvent<HTMLInputElement>) {
+    function convertCelsiusToFahrenheit(
+        e: React.ChangeEvent<HTMLInputElement>
+    ) {
         // (30°C x 1.8) + 32 = 86°F
         const value = Number(e.target.value);
         setFahrenheit(value * 1.8 + 32);
@@ -28,7 +30,7 @@ const Converter: React.FC = () => {
                 <input
                     type="number"
                     value={celsius}
-                    onChange={convertCelsiusToFahr}
+                    onChange={convertCelsiusToFahrenheit}
                 />
             </div>
             <div className="container-row">
