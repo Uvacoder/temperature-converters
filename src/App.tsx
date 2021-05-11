@@ -5,8 +5,9 @@ import Converter from "./components/Converter/Converter";
 const App: React.FC = () => {
     return (
         <div className="App">
-			<header className="App-header">
-				<p>Hello Innotech</p>
+            <header className="App-header">
+                <h1>Hello and welcome to my</h1>
+                <p>Temperature Converter</p>
                 <Converter />
             </header>
         </div>
